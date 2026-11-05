@@ -1,0 +1,20 @@
+{
+  "name": "sage-and-shore-pharmacy",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "api": "json-server --watch db.json --port 3000",
+    "web": "vite --host 127.0.0.1",
+    "dev": "concurrently -k \"npm:api\" \"npm:web\""
+  },
+  "dependencies": {
+    "json-server": "0.17.4"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "vite": "^6.0.7"
+  },
+  "allowScripts": {
+    "esbuild@0.25.12": true
+  }
+}
